@@ -24,17 +24,28 @@
 
 
 <body>
-    <h1>Tipos de dados:</h1>
-    <p>uma variável pode armazenar um valor dos tipos: 
-        string, númeoro, boolean...
-    </p>
+    <h1>Conversão de dados</h1>
+   
    
     <script>
 
-        let numero1 = prompt('Digite um númeor');
-        let numero2 = prompt('Digite outro númeor');
+       let n1 = prompt('Digite um número: ');
+        n1 = parseInt(n1)
+       
+       
+       let n2 = prompt('Digite outro número ');
+       n2 = parseInt(n2)
+
+
         
-        alert (numero1 + numero2);
+       alert ('A divisão entre os números é: ' + (n1 / n2));
+       alert ('A multiplicação entre os números é: ' + (n1 * n2));
+       alert ('A subtração entre os números é: ' + (n1 - n2));
+       alert ('A adição entre os números é: ' + (n1 + n2));
+       
+10
+       
+        
 
     </script>
 
