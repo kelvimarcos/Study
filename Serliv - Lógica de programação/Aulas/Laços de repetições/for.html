@@ -9,31 +9,21 @@
     <h1>Loop for</h1>
 
     <script>
-       let n = parseFloat(prompt('Digite um número'))
+        
+        let n = parseFloat(prompt("Digite um número"));
 
-        if (!isNaN(n)){
+        if (!isNaN(n)) {
 
-        for (let 1 = 0; 1 <= 1000; i++){
-            document.write(n + " x " + i + ":  " + n + i + "<br>")
-        }}
-
-        alert("Saiu do loop")
-
-       /*if (!isNaN(n)){
-        let contador = 0
-        while (contador <= 1000){
-            document.write(n + " x " + contador + ":  " + n + contador + "<br>")
-            contador++
+        for (let i = 0; i <= 1000; i++) {
+            document.write(n + " x " + i + ":  " + n * i + "<br>")
         }
-
-        document.write("Saiu do loop")
-       }*/ 
-      
-      
-       else {
-    alert("Digite apenas número")
-       }
+        document.write("Saiu do Loop")
+        
+        } else { 
+                alert("Digite apenas número")
+        }
         
     </script>   
+
 </body>
 </html>
