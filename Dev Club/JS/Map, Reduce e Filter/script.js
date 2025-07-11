@@ -41,7 +41,7 @@ Reduce(Reduzir o array a um único valor)
         {id: 1, nome: "Iphone 11", preco: 1100.00, temDesconto: true, quantidade: 1},
         {id: 2, nome: "Iphone 12", preco: 1500.00, temDesconto: false, quantidade: 1},
         {id: 3, nome: "Iphone 13", preco: 1800., temDesconto: true, quantidade: 1 },
-        {id: 4, nome: "Iphone 17", preco: 11000, temDesconto: false, quantidade: 1, },
+        {id: 4, nome: "Iphone 17", preco: 11000, temDesconto: false, quantidade: 2, },
     ];
 
     
@@ -52,11 +52,26 @@ Reduce(Reduzir o array a um único valor)
         return {
             id: produto.id,
             nome: produto.nome,
-            preco: novoPreco.toLocaleString('Pt-br' {
-            style: 'currency', currency: 'BRL'
-            }),
+
+            preco: novoPreco.toLocaleString('Pt-br',{ style: 'currency', currency: 'BRL'}),
+
             quantidade: produto.quantidade,
         }
     })
 
-    console.log(novosProdutos)
+    // console.log(novosProdutos)
+
+
+    //Qual será o faturamento, se vendermos todo o estoque
+
+    
+    const totalVendas = produtos.reduce((acumulador, produto) => {
+        return acumulador + ( produto.preco * produto.quantidade) 
+    }, 0)
+
+    console.log(
+        totalVendas.toLocaleString('Pt-br', {
+            style: 'currency',
+            currency: 'BRL',
+        }),
+    )
