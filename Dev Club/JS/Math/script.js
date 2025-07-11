@@ -20,7 +20,11 @@ const calculo = Math.sqrt(125,2)
 console.log(Math.ceil(calculo))
  */
 
-const calculo = Math.sqrt(125,2)
-console.log(Math.floor(calculo))
+/* const calculo = Math.sqrt(125,2)
+console.log(Math.floor(calculo)) */
+
+
+const calculo = Math.random() * 100 - 1 + 1;
+console.log(Math.ceil(calculo));
 
 
