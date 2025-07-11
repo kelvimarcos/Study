@@ -18,7 +18,21 @@ Reduce(Reduzir o array a um único valor)
             - Acumulador
             - Valor atual
             - Posição atual
-            - Array completo*/
+            - Array completo
+            
+            
+ Filter(Filtrar o array)
+    - cria um novo array filtrando os valores desejados do array original
+    - Você tem, acesso a 3 dados
+        - item por item do array
+        - Posição atual do array
+        - Array completo
+    
+ 
+ 
+ */
+
+
 
 
     const numeros = [1,2,3,4,5]
@@ -75,3 +89,10 @@ Reduce(Reduzir o array a um único valor)
             currency: 'BRL',
         }),
     )
+
+
+//Filtrar somente os produtos em promoção
+
+
+const promocao = produtos.filter( produto => produto.temDesconto)
+console.log(promocao)
