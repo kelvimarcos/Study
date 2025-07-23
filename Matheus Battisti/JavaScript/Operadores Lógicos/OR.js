@@ -1,0 +1,1 @@
+O operador lógico || é conhecido como origin;
