@@ -1,4 +1,4 @@
-O operador lógico || é conhecido como origin;/* O operador lógico || é conhecido como OR
+/* O operador lógico || é conhecido como OR
 
 Ele retorna true caso uma das operações retorne verdadeiro
 
