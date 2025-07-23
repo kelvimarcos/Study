@@ -28,3 +28,26 @@ console.log(typeof mensagem)
 /* Boolean - Representa um valor verdadeirou ou falso
 comparações e resultados em booleans
  */
+
+
+/* undefined e null 
+
+São considerados tipos de dados
+O null é um tipo de dado que representa um valor
+O undefined é um tipp de dado para uma variavel coom valor não atribuido */
+
+
+
+
+let nome = null
+
+
+console.log(nome)
+
+nome = 'Kelvison'
+
+
+console.log(nome)
+
+
+console.log(sobrenome)
