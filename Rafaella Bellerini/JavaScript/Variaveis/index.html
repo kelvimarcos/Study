@@ -16,12 +16,23 @@
         <h1>Boas vindas!</h1>
         <h2>Vamos personalizar sua saudação usando JavaScript</h2>
 
-        <div class="saudacao">Olá, mundo!</div>
+        <div class="saudacao" id="mensagem"> Olá, visitante!</div>
+
+
+        <button onclick="mudarNome()">Personalizar nome</button>
     </div>
+
+
 
 
     <script>
 
+        function mudarNome() {
+
+            let nome = "Kelvison"
+
+            document.getElementById("mensagem").textContent = "Olá, " + nome;
+        }
 
 
     </script>
